@@ -38,6 +38,7 @@ function taxCalc(salary){
 	} 
 	return taxCalc;
 } 
+console.log("----------------------------");
 taxCalc(20000000);
 //taxCalc(prompt("Menghitung pajak dari gaji yang di dapat, tulis jumlah gaji : "))
 
@@ -79,6 +80,7 @@ function checkBMI(height,weight)
 		}
 		return checkBMI
 } 
+console.log("----------------------------");
 checkBMI(170, 80);
 
 
@@ -93,11 +95,26 @@ checkBMI(170, 80);
 /// - (String) kalimat yang sudah kita ubah huruf pertamanya menjadi huruf besar
 
 /// EDIT HERE
-function convToUpperCase(sentence) 
-{
+ 
+  
+ function convToUpperCase(sentence)
+{ 
+	return sentence.replace (/\w\S*/g, function(text)
+	   {  return text.charAt(0).toUpperCase() + text.substr(1).toLowerCase() } )
+} 
+console.log("----------------------------");
+console.log(convToUpperCase("hello bandung"));
+ 
 
-	console.log(sentence.toUpperCase());
-} convToUpperCase("hello bandung")
+// function convToUpperCase(sentence) 
+// {
+// 	sentence.replace (/\w\S*/g, function (sentence){
+// 		console.log (sentence.toUpperCase() + sentence.substr(1).toLowerCase());	
+// 	}
+	
+// 	// return sentence.toUpperCase().sentence.substr(1).tolowercase();
+		
+// } convToUpperCase("mencoba")
 
 
 /// Soal - 04
@@ -117,5 +134,13 @@ function convToUpperCase(sentence)
 /// EDIT HERE
 function firstNonRepeatedChar(word) 
 {
-	
-}
+	if(word.includes(" ")){
+		console.log("Kata : " + word + " Tidak boleh di pisah")
+	}else if(word.match(word)){
+		console.log(word="0")
+	}else if(word){
+		console.log(word=" ")
+	}
+} 
+console.log("----------------------------");
+firstNonRepeatedChar("Hello World")
