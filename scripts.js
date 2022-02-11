@@ -64,16 +64,16 @@ taxCalc(20000000);
 
 function checkBMI(height,weight)
 {
-checkBMI = (weight / (height * height) * 10000);
+	let checkBMI = (weight / (height * height) * 10000);
 
 		if(checkBMI < 18.5){
-			console.log("Tinggi " + height + " Dan Berat "+ weight + " Dengan hasil BMI "+ checkBMI.toFixed(1) + " termasuk Under Weight ")
+			console.log("Tinggi " + height + " Dan Berat "+ weight + " Dengan hasil BMI " + checkBMI.toFixed(1) + " termasuk Under Weight ")
 		}else if(checkBMI > 18.5 && checkBMI < 24.9){
-			console.log("Tinggi " + height + " Dan Berat "+ weight + " Dengan hasil BMI "+ checkBMI.toFixed(1) + " termasuk Normal ")
+			console.log("Tinggi " + height + " Dan Berat "+ weight + " Dengan hasil BMI " + checkBMI.toFixed(1) + " termasuk Normal ")
 		}else if(checkBMI > 25 && checkBMI < 29.9){
-			console.log("Tinggi " + height + " Dan Berat "+ weight + " Dengan hasil BMI "+ checkBMI.toFixed(1) + " termasuk over Weight ")
+			console.log("Tinggi " + height + " Dan Berat "+ weight + " Dengan hasil BMI " + checkBMI.toFixed(1) + " termasuk over Weight ")
 		}else if(checkBMI > 30 && checkBMI < 34.9){
-			console.log("Tinggi " + height + " Dan Berat "+ weight + " Dengan hasil BMI "+ checkBMI.toFixed(1) + " termasuk obese ")
+			console.log("Tinggi " + height + " Dan Berat "+ weight + " Dengan hasil BMI " + checkBMI.toFixed(1) + " termasuk obese ")
 		}else if(checkBMI > 35){
 			console.log("Tinggi " + height + " Dan Berat "+ weight + " Dengan hasil BMI "+ checkBMI.toFixed(1) + " termasuk extremely obese ")
 		}
@@ -95,6 +95,7 @@ checkBMI(170, 80);
 /// EDIT HERE
 function convToUpperCase(sentence) 
 {
+
 	console.log(sentence.toUpperCase());
 } convToUpperCase("hello bandung")
 
@@ -114,7 +115,7 @@ function convToUpperCase(sentence)
 /// (String) huruf yang pertama kali tidak ada kembarannya
 
 /// EDIT HERE
-function firstNonRepeatedChar() 
+function firstNonRepeatedChar(word) 
 {
-
+	
 }
