@@ -104,17 +104,6 @@ checkBMI(170, 80);
 } 
 console.log("----------------------------");
 console.log(convToUpperCase("hello bandung"));
- 
-
-// function convToUpperCase(sentence) 
-// {
-// 	sentence.replace (/\w\S*/g, function (sentence){
-// 		console.log (sentence.toUpperCase() + sentence.substr(1).toLowerCase());	
-// 	}
-	
-// 	// return sentence.toUpperCase().sentence.substr(1).tolowercase();
-		
-// } convToUpperCase("mencoba")
 
 
 /// Soal - 04
@@ -144,3 +133,4 @@ function firstNonRepeatedChar(word)
 } 
 console.log("----------------------------");
 firstNonRepeatedChar("Hello World")
+
